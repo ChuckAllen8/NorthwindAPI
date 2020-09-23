@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using Dapper.Contrib.Extensions;
 using System.Linq;
 using System.Threading.Tasks;
+using NorthwindAPI.Models;
 
 namespace NorthwindAPI.Services
 {
@@ -16,6 +17,11 @@ namespace NorthwindAPI.Services
         public DataAccessor(IConfiguration config)
         {
             db = new SqlConnection(config.GetConnectionString("DbServer"));
+        }
+
+        public IEnumerable<Product> GetAllProducts()
+        {
+            return db.GetAll<Product>();
         }
     }
 }
