@@ -8,8 +8,6 @@ namespace NorthwindAPI.Models
     public class ReceivedOrder
     {
         public long RepeatOrder { get; set; }
-        public Customer ShipAddress { get; set; }
         public List<OrderDetail> Products { get;set;}
-
     }
 }
