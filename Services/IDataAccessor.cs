@@ -12,6 +12,12 @@ namespace NorthwindAPI.Services
 
         public IEnumerable<Order> GetCustomerOrders(string CustomerID);
 
+        public Customer GetCustomer(string CustomerID);
+
+        public bool SaveOrder(Order order);
+        public bool SaveDetail(OrderDetail detail);
+
+        public bool DeleteOrder(long OrderID);
     }
 
    

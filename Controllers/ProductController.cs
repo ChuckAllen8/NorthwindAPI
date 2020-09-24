@@ -54,9 +54,6 @@ namespace NorthwindAPI.Controllers
      * GET Line item price for Product ID for each item in an order return OrderID, JOIN for ProductName, Quantity, Total Price (Unit Price * Qty[discount])
      * POST Add item to Unshipped Order - Accept Product ID, Qty [Modify existing Qty as PUT]
      * 
-     * Customer
-     * PUT to update Customer Info
-     * 
      * CustomerID not vlid returns empty list
      * 
      * */

@@ -9,7 +9,7 @@ namespace NorthwindAPI.Models
     [Table("Customers")]
     public class Customer
     {
-        [Key]
+        [ExplicitKey]
         public string CustomerID { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
