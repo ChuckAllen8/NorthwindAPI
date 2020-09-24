@@ -26,7 +26,12 @@ namespace NorthwindAPI.Controllers
         [Route("{CustomerID}")]
         public IEnumerable<Order> GetMyOrders(string CustomerID)
         {
-            return db.GetCustomerOrders(CustomerID);
+            IEnumerable<Order> orders = db.GetCustomerOrders(CustomerID);
+            foreach(Order o in orders)
+            {
+                o.Details = new List<OrderDetail>();
+            }
+            return orders;
         }
 
         [HttpGet]
