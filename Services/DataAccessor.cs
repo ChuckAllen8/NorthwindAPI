@@ -23,5 +23,11 @@ namespace NorthwindAPI.Services
         {
             return db.GetAll<Product>();
         }
+
+        public IEnumerable<Order> GetCustomerOrders(string CustomerID)
+        {
+            IEnumerable<Order> AllOrders = db.GetAll<Order>();
+            return from order in AllOrders where order.CustomerID == CustomerID select order;
+        }
     }
 }

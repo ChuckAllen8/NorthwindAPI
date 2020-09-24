@@ -10,7 +10,7 @@ namespace NorthwindAPI.Models
     public class Customer
     {
         [Key]
-        public long CustomerID { get; set; }
+        public string CustomerID { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
         public string Region { get; set; }

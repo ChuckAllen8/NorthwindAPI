@@ -11,7 +11,7 @@ namespace NorthwindAPI.Models
     {
         [Key]
         public long OrderID { get; set; }
-        public long CustomerID { get; set; }
+        public string CustomerID { get; set; }
         public DateTime OrderDate { get; set; }
         public DateTime RequiredDate { get; set; }
         public DateTime ShippedDate { get; set; }

@@ -47,6 +47,7 @@ namespace NorthwindAPI.Controllers
      * GET Unshipped Orders ShippedDate is Null return All previous for Unshipped Orders, return message for no results
      * DELETE Unshipped Order by OrderID
      * POST Create New Order - Accept Shipped To, Product ID, Qty -> Post Order Detail
+     * POST Create Repeat Order - Duplicate all items with new OrderID
      * 
      * Order Details
      * GET Frequent item orders return OrderID, Product ID, and Quantity (Optional limit number of items (Top 3 or 5))
@@ -55,6 +56,8 @@ namespace NorthwindAPI.Controllers
      * 
      * Customer
      * PUT to update Customer Info
+     * 
+     * CustomerID not vlid returns empty list
      * 
      * */
 }

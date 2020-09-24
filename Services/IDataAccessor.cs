@@ -10,6 +10,8 @@ namespace NorthwindAPI.Services
     {
         public IEnumerable<Product> GetAllProducts();
 
+        public IEnumerable<Order> GetCustomerOrders(string CustomerID);
+
     }
 
    
