@@ -18,6 +18,10 @@ namespace NorthwindAPI.Services
         public bool SaveDetail(OrderDetail detail);
 
         public bool DeleteOrder(long OrderID);
+
+        public bool SaveProduct(Product product);
+
+        public IEnumerable<Category> GetCategories();
     }
 
    
