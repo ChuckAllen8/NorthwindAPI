@@ -92,9 +92,4 @@ namespace NorthwindAPI.Controllers
     }
 }
 
-      /*
-     * Order Details
-     * done GET Frequent item orders return OrderID, Product ID, and Quantity(Optional limit number of items (Top 3 or 5))
-     * GET Line item price for Product ID for each item in an order return OrderID, JOIN for ProductName, Quantity, Total Price(Unit Price * Qty[discount])
-     * POST Add item to Unshipped Order - Accept Product ID, Qty[Modify existing Qty as PUT]
-     * */
+

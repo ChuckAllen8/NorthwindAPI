@@ -37,6 +37,11 @@ namespace NorthwindAPI.Services
             return db.GetAll<Product>();
         }
 
+        public IEnumerable<Category> GetCategories()
+        {
+            return db.GetAll<Category>();
+        }
+
         public Customer GetCustomer(string CustomerID)
         {
             return db.Get<Customer>(CustomerID);
@@ -70,5 +75,17 @@ namespace NorthwindAPI.Services
             }
             return false;
         }
+
+        public bool SaveProduct(Product product)
+        {
+            if (product.ProductID == 0)
+            {
+                product.ProductID = db.Insert(product);
+                return true;
+            }
+            return false;
+        }
     }
+
+
 }
